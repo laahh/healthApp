@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "budi",
+      "password": "budi123",
+      "name": "Budi Santoso",
+      "email": "budi.santoso@email.com",
+      "phone": "081234567890",
+      "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuB7uwxn84_hs7oaiFQKLbY8Y-f6y693VmByLqOGrcuA-6v64TcopIAZDvqqRbuzbrkuxM-pg1MkjTwcvsrU3tvYgiBkKItP0qtNqqx-sailK7sQv4jDejfx1_ni-xcQ-frac1FsVCI7bOn9-1fejw0U6l9C01hDLQZ6psZ2La1RnaOfkp8bI9vr2jEd_l3nE7QULFkpC3rdsEBOsNTajMnpxUadnp1jj199t_1nXryacDVai90wtEXEjWZ84YSz4vgyLw0E3pTlJD3H",
+      "membershipTier": "PLATINUM MEMBER",
+      "address": {
+        "label": "Rumah",
+        "detail": "Jl. Melati No. 45, RT 02/RW 08",
+        "city": "Jakarta Selatan"
+      },
+      "mcu": {
+        "tanggal": "2026-04-09",
+        "lokasi": "Medical Check Up",
+        "tekananDarah": "-",
+        "gulaDarahPuasa": "104 mg/dL (100 mg/dL)",
+        "kolesterolTotal": "235 mg/dL (200 mg/dL)",
+        "hemoglobin": "-",
+        "catatan": "Fit With Note. IMT 27.04 (18-25), terdapat Sindrom Metabolik. Kontrol ulang dalam 1 bulan.",
+        "GDP": "104 (100mg/dl)",
+        "Kolesterol": "235 (200mg/dl)"
+      },
+      "stats": {
+        "foodUploads": 12,
+        "activityUploads": 420,
+        "coupons": 3
+      }
+    },
+    {
+      "id": "u2",
+      "username": "siti",
+      "password": "siti456",
+      "name": "Siti Rahayu",
+      "email": "siti.rahayu@email.com",
+      "phone": "089876543210",
+      "photo": "https://lh3.googleusercontent.com/aida-public/AB6AXuDRk0lt_7kjJAcR1HkSEKKWaRv2uw-n-fja0a4zpBVCt2r4mTixid9w6ddHZLdJ-q_vn4WD0ZTh6qYfvcccd-U85xk1qFf0rAv8Ekocr9LX0pCNtdi9ircIw_DQzDZ0Fqz0EUFiJTABOosNZUcUJ-p1j1d8X0YgLekgYV4SydagsRqWk9rQkULLfU1NoE3lKASKI-Famds6spJUoe6DZcwHmYtKAs-m_1F2PTt4ZVNCas5VdklhPsgU_S0M4DRrv2r-kg0hoailnyOM",
+      "membershipTier": "GOLD MEMBER",
+      "address": {
+        "label": "Kantor",
+        "detail": "Gedung Harmoni Lt. 5, Jl. Sudirman",
+        "city": "Jakarta Pusat"
+      },
+      "mcu": {
+        "tanggal": "2026-01-08",
+        "lokasi": "Lab Kesehatan Prima",
+        "tekananDarah": "118/76 mmHg",
+        "gulaDarahPuasa": "88 mg/dL",
+        "kolesterolTotal": "165 mg/dL",
+        "hemoglobin": "13.8 g/dL",
+        "catatan": "Hemoglobin sedikit di bawah rata-rata; disarankan tambah zat besi."
+      },
+      "stats": {
+        "foodUploads": 28,
+        "activityUploads": 190,
+        "coupons": 1
+      }
+    }
+  ]
+}

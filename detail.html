@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>Kupa - Japan Hainanese Sashimi</title>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <script id="tailwind-config">
+         tailwind.config = {
+           darkMode: "class",
+           theme: {
+             extend: {
+               "colors": {
+                       "surface-container": "#eaefe8",
+                       "error-container": "#ffdad6",
+                       "on-primary-fixed-variant": "#00522f",
+                       "on-secondary-fixed": "#191c1d",
+                       "on-secondary": "#ffffff",
+                       "primary-fixed": "#8ef8b8",
+                       "surface-bright": "#f5fbf3",
+                       "outline": "#6e7a70",
+                       "error": "#ba1a1a",
+                       "on-tertiary-fixed": "#40000d",
+                       "surface": "#f5fbf3",
+                       "on-primary-container": "#f6fff5",
+                       "surface-tint": "#006d41",
+                       "primary-container": "#058651",
+                       "tertiary-fixed": "#ffdadb",
+                       "inverse-on-surface": "#edf2eb",
+                       "outline-variant": "#bdcabe",
+                       "secondary-container": "#e1e3e4",
+                       "on-surface": "#171d19",
+                       "tertiary-fixed-dim": "#ffb2b7",
+                       "surface-container-lowest": "#ffffff",
+                       "on-error": "#ffffff",
+                       "tertiary-container": "#ba545f",
+                       "surface-container-high": "#e4eae2",
+                       "surface-container-highest": "#dee4dd",
+                       "on-error-container": "#93000a",
+                       "on-tertiary": "#ffffff",
+                       "on-tertiary-fixed-variant": "#7f2833",
+                       "surface-dim": "#d6dcd4",
+                       "on-surface-variant": "#3e4941",
+                       "secondary": "#5c5f60",
+                       "tertiary": "#9b3c47",
+                       "primary": "#006a3f",
+                       "on-primary-fixed": "#002110",
+                       "inverse-primary": "#72db9e",
+                       "on-tertiary-container": "#fffbff",
+                       "inverse-surface": "#2c322d",
+                       "on-primary": "#ffffff",
+                       "on-background": "#171d19",
+                       "primary-fixed-dim": "#72db9e",
+                       "secondary-fixed": "#e1e3e4",
+                       "on-secondary-fixed-variant": "#454748",
+                       "surface-variant": "#dee4dd",
+                       "background": "#f5fbf3",
+                       "surface-container-low": "#f0f5ee",
+                       "on-secondary-container": "#626566",
+                       "secondary-fixed-dim": "#c5c7c8"
+               },
+               "borderRadius": {
+                       "DEFAULT": "0.25rem",
+                       "lg": "0.5rem",
+                       "xl": "0.75rem",
+                       "full": "9999px"
+               },
+               "fontFamily": {
+                       "headline": ["Plus Jakarta Sans"],
+                       "body": ["Inter"],
+                       "label": ["Inter"]
+               }
+             },
+           },
+         }
+      </script>
+      <style>
+         .material-symbols-outlined {
+         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+         }
+         body { font-family: 'Inter', sans-serif; }
+         h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+      </style>
+      <style>
+         body {
+         min-height: max(884px, 100dvh);
+         }
+      </style>
+   </head>
+   <body class="bg-surface text-on-surface antialiased max-w-[375px] mx-auto min-h-screen relative pb-32">
+      <!-- Top AppBar (Injected from Shared Components JSON) -->
+      <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-emerald-50/80 dark:bg-zinc-950/80 backdrop-blur-xl no-border shadow-none max-w-[375px] mx-auto">
+         <button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-emerald-100/50 transition-colors active:scale-95 duration-150">
+         <span class="material-symbols-outlined text-emerald-700">arrow_back</span>
+         </button>
+         <span class="text-2xl font-black tracking-tighter text-emerald-800 dark:text-emerald-400">Kupa</span>
+         <button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-emerald-100/50 transition-colors active:scale-95 duration-150">
+         <span class="material-symbols-outlined text-emerald-700">notifications</span>
+         </button>
+      </header>
+      <!-- Main Content Canvas -->
+      <main class="pt-20">
+         <!-- Hero Editorial Image -->
+         <div class="relative w-full h-[320px] overflow-hidden">
+            <img alt="Japan Hainanese Sashimi" class="w-full h-full object-cover" data-alt="Exquisite plate of fresh sashimi slices with artistic garnish on a dark textured ceramic plate, moody high-end food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc4AJUkBHIcbZb8xlTtHsVsvRp2q_uZrtdha6ny9EEfmUjSofP9iuMfWBQxbhXD7_9I-iXLLJbK2RSfcpQ8HQcuWodrIphBTHko0DOmRLHr5biHNxKUm3sDuxQdgzgkMJwUU3gJmw6C_2Rgub83vMmhyhL2NGq3NpkB5vwxoI1vIenJivNegfzDwDSVQfxjXNZL6IUfxDxNC6hoWbbbzqJc9ulPVPGqvaqqm8DjBhdJEbBTFZkU_tpF-FBNjs3eAAviYMuQHyMqYdA"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            <div class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded-full shadow-lg">
+               <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+            </div>
+         </div>
+         <!-- Food Details Canvas -->
+         <section class="px-6 -mt-8 relative z-10 bg-surface rounded-t-[32px] pt-8">
+            <div class="flex justify-between items-start mb-2">
+               <h1 class="text-2xl font-extrabold text-on-surface tracking-tight leading-tight max-w-[70%]">Japan Hainanese Sashimi</h1>
+               <p class="text-xl font-bold text-primary">$39.99</p>
+            </div>
+            <div class="flex items-center gap-4 mb-6">
+               <div class="flex items-center gap-1 bg-surface-container-low px-3 py-1 rounded-full">
+                  <span class="material-symbols-outlined text-amber-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="text-sm font-bold text-on-surface">4.9</span>
+                  <span class="text-xs text-on-surface-variant ml-1">(1.2k Reviews)</span>
+               </div>
+               <div class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-sm">schedule</span>
+                  <span class="text-sm font-medium">15-20 min</span>
+               </div>
+            </div>
+            <p class="text-on-surface-variant body-md leading-relaxed mb-8">
+               A masterpiece of culinary fusion featuring premium Grade-A sashimi cuts served with traditional Hainanese fragrant ginger and scallion essence. An editorial dining experience.
+            </p>
+            <!-- Customization Sections (Bento-style layout) -->
+            <div class="space-y-8 pb-12">
+               <!-- Sauce Selection -->
+               <div>
+                  <div class="flex justify-between items-center mb-4">
+                     <h2 class="text-lg font-bold text-on-surface">Sauce</h2>
+                     <span class="bg-secondary-container text-on-secondary-container px-3 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-widest">Required</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-3">
+                     <label class="relative flex items-center p-4 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors group">
+                        <input checked="" class="sr-only peer" name="sauce" type="radio"/>
+                        <div class="flex flex-col">
+                           <span class="font-bold text-on-surface">Teriyaki</span>
+                           <span class="text-xs text-on-surface-variant">Sweet &amp; Savory</span>
+                        </div>
+                        <div class="ml-auto w-5 h-5 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+                           <div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+                        </div>
+                     </label>
+                     <label class="relative flex items-center p-4 rounded-2xl bg-surface-container-low cursor-pointer hover:bg-surface-container-high transition-colors group">
+                        <input class="sr-only peer" name="sauce" type="radio"/>
+                        <div class="flex flex-col">
+                           <span class="font-bold text-on-surface">Yakiniku</span>
+                           <span class="text-xs text-on-surface-variant">Smoky BBQ</span>
+                        </div>
+                        <div class="ml-auto w-5 h-5 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-all">
+                           <div class="w-2 h-2 bg-white rounded-full opacity-0 peer-checked:opacity-100"></div>
+                        </div>
+                     </label>
+                  </div>
+               </div>
+               <!-- Toppings Selection -->
+               <div>
+                  <h2 class="text-lg font-bold text-on-surface mb-4">Add a Topping?</h2>
+                  <div class="space-y-3">
+                     <label class="flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest shadow-sm border border-outline-variant/10 cursor-pointer group">
+                        <div class="flex items-center gap-3">
+                           <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center">
+                              <span class="material-symbols-outlined text-on-surface-variant">egg_alt</span>
+                           </div>
+                           <span class="font-semibold text-on-surface">Omelet</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                           <span class="text-sm font-medium text-on-surface-variant">+$2.00</span>
+                           <input class="w-5 h-5 rounded-lg border-outline-variant text-primary focus:ring-primary/20 cursor-pointer" type="checkbox"/>
+                        </div>
+                     </label>
+                     <label class="flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest shadow-sm border border-outline-variant/10 cursor-pointer group">
+                        <div class="flex items-center gap-3">
+                           <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center">
+                              <span class="material-symbols-outlined text-on-surface-variant">restaurant</span>
+                           </div>
+                           <span class="font-semibold text-on-surface">Sausage</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                           <span class="text-sm font-medium text-on-surface-variant">+$3.50</span>
+                           <input class="w-5 h-5 rounded-lg border-outline-variant text-primary focus:ring-primary/20 cursor-pointer" type="checkbox"/>
+                        </div>
+                     </label>
+                     <label class="flex items-center justify-between p-4 rounded-2xl bg-surface-container-lowest shadow-sm border border-outline-variant/10 cursor-pointer group">
+                        <div class="flex items-center gap-3">
+                           <div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center">
+                              <span class="material-symbols-outlined text-on-surface-variant">flatware</span>
+                           </div>
+                           <span class="font-semibold text-on-surface">Cheese</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                           <span class="text-sm font-medium text-on-surface-variant">+$1.50</span>
+                           <input checked="" class="w-5 h-5 rounded-lg border-outline-variant text-primary focus:ring-primary/20 cursor-pointer" type="checkbox"/>
+                        </div>
+                     </label>
+                  </div>
+               </div>
+               <!-- Quantity Selector -->
+               <div class="flex items-center justify-between bg-surface-container-low p-4 rounded-[24px]">
+                  <span class="font-bold text-on-surface">Quantity</span>
+                  <div class="flex items-center gap-6">
+                     <button class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm active:scale-90 transition-transform">
+                     <span class="material-symbols-outlined">remove</span>
+                     </button>
+                     <span class="text-lg font-extrabold text-on-surface w-4 text-center">1</span>
+                     <button class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-md active:scale-90 transition-transform">
+                     <span class="material-symbols-outlined">add</span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- Fixed Bottom Action Bar -->
+      <footer class="fixed bottom-0 left-0 w-full z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl px-6 pb-8 pt-4 border-t border-zinc-100/10 max-w-[375px] mx-auto">
+         <div class="flex items-center justify-between gap-4">
+            <div class="flex flex-col">
+               <span class="text-xs text-on-surface-variant font-medium">Total Price</span>
+               <span class="text-xl font-black text-on-surface">$41.49</span>
+            </div>
+            <button class="flex-1 h-14 rounded-full bg-gradient-to-br from-primary-container to-primary text-white font-bold text-lg flex items-center justify-center gap-2 shadow-[0_8px_24px_rgba(0,106,63,0.3)] active:scale-95 duration-150">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+            Add to Cart
+            </button>
+         </div>
+      </footer>
+   </body>
+</html>

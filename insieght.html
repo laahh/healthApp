@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <script id="tailwind-config">
+         tailwind.config = {
+             darkMode: "class",
+             theme: {
+                 extend: {
+                     colors: {
+                         "primary": "#ec5b13",
+                         "background-light": "#f8f6f6",
+                         "background-dark": "#221610",
+                     },
+                     fontFamily: {
+                         "display": ["Public Sans"]
+                     },
+                     borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                 },
+             },
+         }
+      </script>
+      <style>
+         body {
+         min-height: max(884px, 100dvh);
+         }
+      </style>
+   </head>
+   <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+      <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+         <!-- Header -->
+         <div class="flex items-center bg-white dark:bg-slate-900 p-4 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-10 justify-between">
+            <div class="flex size-12 shrink-0 items-center justify-center cursor-pointer">
+               <span class="material-symbols-outlined text-slate-600 dark:text-slate-400">arrow_back</span>
+            </div>
+            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Your Post-Run Guide</h2>
+            <div class="flex w-12 items-center justify-end">
+               <button class="flex items-center justify-center rounded-xl h-10 w-10 bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+               <span class="material-symbols-outlined text-slate-600 dark:text-slate-400">share</span>
+               </button>
+            </div>
+         </div>
+         <!-- Summary Section -->
+         <div class="flex p-6 @container">
+            <div class="flex w-full flex-col gap-6 items-center">
+               <div class="flex gap-4 flex-col items-center">
+                  <div class="relative">
+                     <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-primary shadow-lg" data-alt="Portrait of Fanny, a smiling young athlete after a run" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNeGKVRJgIPImTURVGAslzSS3ZGPZ1xwjwxmvnBO6MgCf_BcNjV1Jb4dQVUUhe2eezIrwoSJlx8y4bf3tE4mzYZ7Ob5GUGFekJ8dYQKoLn6pO04wFbneUeuijPEKJvnZIoJGeL-M2ktUWVwsSZJVp0p6H9hEYTuSXFd30ToMP9i6HpnGMb3hPgU95cjKY1BqdQXKMKQz7xSUcpPh5dxD-VMYhec9PJLins0xpetqOgFxP2RK1LxYvs18mJOZUQXWm9j8hAZlhXO0Q");'></div>
+                     <div class="absolute -bottom-2 -right-2 bg-primary text-white rounded-full p-2 border-2 border-white">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span>
+                     </div>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                     <p class="text-[24px] font-bold leading-tight tracking-tight text-center">Great job, Fanny!</p>
+                     <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal text-center mt-1">You crushed that 10km run today.</p>
+                     <div class="flex gap-3 mt-3 items-center">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-base">local_fire_department</span> 637 kcal
+                        </span>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-base">favorite</span> 188 avg BPM
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Nutrition Recommendations -->
+         <div class="px-4 py-2">
+            <div class="flex items-center justify-between mb-3 px-1">
+               <h3 class="text-lg font-bold leading-tight tracking-[-0.015em]">Nutrition for Recovery</h3>
+               <span class="text-primary text-sm font-semibold cursor-pointer">View All</span>
+            </div>
+            <div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-slate-900 p-4 shadow-sm border border-slate-100 dark:border-slate-800">
+               <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                     <p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-tight">High-Protein Quinoa Bowl</p>
+                     <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Perfect balance of 35g protein and moderate carbs to replenish your glycogen.</p>
+                  </div>
+                  <button class="flex min-w-[120px] items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white gap-2 text-sm font-semibold w-fit">
+                  <span class="truncate">View Recipe</span>
+                  <span class="material-symbols-outlined text-base">restaurant</span>
+                  </button>
+               </div>
+               <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex-1" data-alt="A healthy quinoa bowl with vegetables and protein" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlcDH2JIlz1DzvKwKNdeO5W-zpytrntZ-6qwOvCtsDxwnG1KCnwsO0PAcTiI1cOfMUpZYIaibXGkOXmS-CClXdo-eqjL8019GSl9M9cHyrCdPcikKys8xekMAA84TyZxsBfCv-DkITTPwKpvoKnwsBpz4Bt2jriGbrC9sA89Wlnv3pOXXvXwWpFMSA5u8JHWnrfMDmVFnP4O8EzMgFemKsBlQ2S0JuDVG_lFuTx03jWk49EJVC9mcEAFAnEgYbMEMeG_gbotxNi3Y");'></div>
+            </div>
+         </div>
+         <!-- Recovery Tips -->
+         <div class="px-4 py-4">
+            <h3 class="text-lg font-bold leading-tight tracking-[-0.015em] mb-3 px-1">Recovery Protocol</h3>
+            <div class="grid grid-cols-2 gap-3">
+               <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+                  <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                     <span class="material-symbols-outlined text-blue-600">water_drop</span>
+                  </div>
+                  <p class="font-bold text-sm">Hydration</p>
+                  <p class="text-xs text-slate-500">Drink 500ml of water with electrolytes to recover from high BPM output.</p>
+               </div>
+               <div class="bg-white dark:bg-slate-900 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col gap-2">
+                  <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                     <span class="material-symbols-outlined text-green-600">self_improvement</span>
+                  </div>
+                  <p class="font-bold text-sm">Active Stretch</p>
+                  <p class="text-xs text-slate-500">10 mins of lower body static stretching to prevent muscle tightness.</p>
+               </div>
+            </div>
+         </div>
+         <!-- Next Workout Suggestion -->
+         <div class="px-4 py-2 mb-24">
+            <h3 class="text-lg font-bold leading-tight tracking-[-0.015em] mb-3 px-1">Next Workout Suggestion</h3>
+            <div class="bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-xl p-4 flex items-center gap-4">
+               <div class="bg-primary rounded-xl p-3 text-white">
+                  <span class="material-symbols-outlined">directions_walk</span>
+               </div>
+               <div class="flex-1">
+                  <p class="font-bold text-slate-900 dark:text-slate-100">Active Recovery Walk</p>
+                  <p class="text-sm text-slate-600 dark:text-slate-400">Light 20-min walk tomorrow to keep joints moving.</p>
+               </div>
+               <button class="bg-white dark:bg-slate-800 p-2 rounded-full border border-slate-200 dark:border-slate-700 shadow-sm">
+               <span class="material-symbols-outlined text-primary">add</span>
+               </button>
+            </div>
+         </div>
+         <!-- Bottom Navigation -->
+         <div class="fixed bottom-0 left-0 right-0 z-20 flex border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pb-6 pt-2">
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+               <span class="material-symbols-outlined">home</span>
+               <p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Home</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+               <span class="material-symbols-outlined">fitness_center</span>
+               <p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Workouts</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+               <span class="material-symbols-outlined">analytics</span>
+               <p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Insights</p>
+            </a>
+            <a class="flex flex-1 flex-col items-center justify-end gap-1 text-slate-400 dark:text-slate-500" href="#">
+               <span class="material-symbols-outlined">person</span>
+               <p class="text-[10px] font-medium leading-normal tracking-[0.015em]">Profile</p>
+            </a>
+         </div>
+      </div>
+   </body>
+</html>
